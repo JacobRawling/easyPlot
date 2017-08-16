@@ -18,4 +18,6 @@ You can optionally put in a "info.txt" file in every folder and subfolder of a p
 
 If the user is as it the index.php page without requesting any project or subfolder (via php GET information) then ./pages/info/info.txt will be piped into the page. 
 
+### Creditation 
 
+This project is heavily based on the https://github.com/almasaeed2010/AdminLTE 
