@@ -15,12 +15,12 @@
   ],
   "authors": [
     {
-      "name": "Abdullah Almsaeed",
-      "email": "support@almsaeedstudio.com"
+      "name": "Jacob Rawling",
+      "email": "jrawling@cern.ch"
     }
   ],
   "license": "MIT",
   "support": {
-    "issues": "https://github.com/almasaeed2010/AdminLTE/issues"
+    "issues": "https://github.com/jacobrawling/easyPlot/issues"
   }
 }
