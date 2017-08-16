@@ -1,0 +1,3 @@
+ADD PLOTS THAT ARE ONLY ACCESSIBLE VIA <yoursite>/atlas-plots/ 
+
+Which has a .htaccess file to control who is allowed to see your plots! 
