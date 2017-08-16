@@ -174,7 +174,7 @@
                 if(!is_dir($dir.$proj.'/'.$subfolder.'/'.$ssubfolder))
                   continue;
                 ?>
-                <li><a href="https://jrawling.web.cern.ch/jrawling/index.php?project=<?php echo  $proj.'&subfolder='.$subfolder.'/'.$ssubfolder.'&public=1'; ?>"><i class="fa fa-circle-o"></i><?php echo clean_string($ssubfolder); ?> </a></li>
+                <li><a href="index.php?project=<?php echo  $proj.'&subfolder='.$subfolder.'/'.$ssubfolder.'&public=1'; ?>"><i class="fa fa-circle-o"></i><?php echo clean_string($ssubfolder); ?> </a></li>
               <?php
                // }
              }
@@ -300,7 +300,7 @@
                   <div class="row">
                     <div class="col-md-9 col-sm-8">
                         <!-- Map will be created here -->
-                       <a target="_blank" href="https://jrawling.web.cern.ch/jrawling/easyPlot/<?php echo $dir.'/'.$file;?>"><img src="<?php echo $dir.'/'.$file;?>"
+                       <a target="_blank" href="<?php echo $dir.'/'.$file;?>"><img src="<?php echo $dir.'/'.$file;?>"
                               width="130%" height="130%" /></a>
                     </div><!-- /.col --> 
                   </div><!-- /.box-body -->
@@ -352,7 +352,7 @@
         <div class="pull-right hidden-xs">
           <b>Version</b> 2.0
         </div>
-        <strong>Copyright &copy; 2017 <a href="http://jrawling.web.cern.ch/jrawling/">Jacob Rawling</a>.</strong> All rights reserved.
+        <strong>Copyright &copy; 2017 <strong>Jacob Rawling.</strong> All rights reserved.
       </footer>
     </div><!-- ./wrapper -->
 
