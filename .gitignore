@@ -1,0 +1,4 @@
+*.eps
+pages/plots/*
+pages/public_plots/*
+
