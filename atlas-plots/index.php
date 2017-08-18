@@ -215,16 +215,17 @@
              <?php 
                 if ( isset( $_GET['project'] ) && !empty( $_GET['project'] ) )
                   $p = str_replace("%20"," ",$_GET["project"]);
-                else
-                  $p = "none";
+
                 if ( isset( $_GET['subfolder'] ) && !empty( $_GET['subfolder'] ) )
                   $s = str_replace("%20"," ",$_GET["subfolder"]);
-                else
-                  $s = "none";
 
-                $dir    = './pages/plots/'.$p.'/'.$s;
-                if( strcmp($p,"none") == 0 and strcmp($s,"none") ==0 )
-                   $dir = './pages/info';
+
+
+                $dir    = '../pages/plots/'.$p.'/'.$s;
+              
+                if( (!isset( $_GET['project'] ) || !empty( $_GET['project'] ) )
+                   && (!isset( $_GET['subfolder'] ) || !empty( $_GET['subfolder'] ) ))
+                   $dir = '../pages/info';
             
                 $files1 = scandir($dir);
                 $myfile = "";
@@ -232,6 +233,7 @@
                 foreach($files1 as $file)
                 { 
                   if(strcmp($file,"info.txt")==0){
+
                     $myfile = file_get_contents($dir.'/'.$file, FILE_USE_INCLUDE_PATH);
                     ?>
                       <div class="col-md-12">
