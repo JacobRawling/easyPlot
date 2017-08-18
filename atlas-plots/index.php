@@ -219,12 +219,10 @@
                 if ( isset( $_GET['subfolder'] ) && !empty( $_GET['subfolder'] ) )
                   $s = str_replace("%20"," ",$_GET["subfolder"]);
 
-
-
                 $dir    = '../pages/plots/'.$p.'/'.$s;
               
-                if( (!isset( $_GET['project'] ) || !empty( $_GET['project'] ) )
-                   && (!isset( $_GET['subfolder'] ) || !empty( $_GET['subfolder'] ) ))
+                if( (!isset( $_GET['project'] ))
+                   && (!isset( $_GET['subfolder'] )) )
                    $dir = '../pages/info';
             
                 $files1 = scandir($dir);
